@@ -1,0 +1,37 @@
+mat-toolbar{
+    position: relative;
+    z-index: 5;
+}
+
+.content{
+    padding: 24px;
+}
+
+mat-sidenav-container{
+    height: calc(100vh - 64px);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  

@@ -1,0 +1,22 @@
+<div class="sidenav-header">
+  <img
+    [width]="profilePicSize()"
+    [height]="profilePicSize()"
+    src="/assets/img/user.png"
+  />
+  <div class="header-text" [class.hide-header-text]="sideNavCollaspsed()">
+    <h2>USER ADMIN</h2>
+    <p>Autchanapol NIkonlon</p>
+  </div>
+</div>
+<mat-nav-list>
+  <a
+    mat-list-item
+    *ngFor="let item of menuItems()"
+    (click)="onSelectMenuItem(item.route)"
+    routerLinkActive="active"
+  >
+    <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+    <span matListItemTitle *ngIf="!sideNavCollaspsed()">{{ item.label }}</span>
+  </a>
+</mat-nav-list>
